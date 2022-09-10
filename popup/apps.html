@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <style>
+            body{
+                width: 350px;
+                height: 550px;
+                font-family: 'Courier New', Courier, monospace;
+                background: linear-gradient(to bottom left, rgb(0, 0, 105), black);
+                border: white 5px solid;
+                margin: 0;
+                overflow: auto;
+                text-align: center;
+                color: white;
+            }
+
+            h1{
+                text-decoration: underline;
+            }
+
+            .card-white{
+                background: linear-gradient(to bottom left, rgb(177, 177, 177), rgb(235, 235, 235));
+                border-radius: 20px;
+                padding: 10px;
+                margin: 10px;
+                transition: 0.1s ease-in;
+                transform: rotate(0deg);
+                min-height: 150px;
+                box-shadow: rgba(0, 0, 0, 0.507) 5px 5px 10px;
+            }
+
+            .card-red{
+                background: linear-gradient(to bottom left, rgb(158, 0, 0), red);
+                border-radius: 20px;
+                padding: 10px;
+                margin: 10px;
+                transition: 0.1s ease-in;
+                transform: rotate(0deg);
+                min-height: 150px;
+                box-shadow: rgba(0, 0, 0, 0.507) 5px 5px 10px;
+            }
+
+            .card:hover{
+                transform: rotate(2deg);
+            }
+
+            .cardHeader{
+                display: flex;
+            }
+
+            .cardLogo{
+                width: 100px;
+                text-align: left;
+                border-radius: 10px;
+            }
+
+            .cardTitle{
+                font-weight: bold;
+                font-size: 25px;
+                text-align: center;
+                width: 100%;
+                padding: 7.5px;
+            }
+            
+            .cardDesc{
+                margin-top: 10px;
+            }
+
+            .cardButton{
+                margin: 10px;
+                border-radius: 10px;
+                padding: 10px;
+                background: #0005;
+                width: calc(100% - 40px);
+                cursor: pointer;
+                user-select: none;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>VRCStatus</h1>
+
+        <h3>Apps</h3>
+        <div id="apps">
+            
+        </div>
+
+        <script src="./apps.js"></script>
+    </body>
+</html>

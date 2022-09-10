@@ -1,0 +1,23 @@
+{
+
+    "manifest_version": 2,
+    "name": "VRCStatus",
+    "version": "0.1",
+    "description": "Gives you a status in vrc",
+    "content_scripts": [
+        {
+            "matches": [ "<all_urls>" ],
+            "js": [ "status/status.js" ]
+        }
+    ],
+    "browser_action": {
+        "default_icon": "logos/38.png",
+        "default_title": "VRCStatus",
+        "default_popup": "popup/apps.html"
+    },
+    "permissions": [ "webRequest" ],
+    "background": {
+        "scripts": [ "background/bg.js" ],
+        "persistent": false
+    }
+}
