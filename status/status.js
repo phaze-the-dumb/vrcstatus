@@ -60,7 +60,6 @@ let loadConfig = ( config ) => {
 
         setInterval(() => {
             let url = window.location.href.replace('https://vrchat.com/home/', '');
-            console.log(url)
             browser.runtime.sendMessage({ type: 'status', text: texts[url] || 'Browsing VRChat' });
         }, 10000);
     }
