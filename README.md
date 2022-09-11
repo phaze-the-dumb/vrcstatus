@@ -8,3 +8,4 @@ This uses a firefox extension to get the video you are watching and it sends it 
 Currently works with:
 - Youtube: https://youtube.com
 - Spotify: https://open.spotify.com
+- VRChat: https://vrchat.com/home

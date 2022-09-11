@@ -43,4 +43,25 @@ let loadConfig = ( config ) => {
             }
         }, 100)
     }
+
+    if(config.enabledApps.find(x => x === 'VRChat') && window.location.href.includes('vrchat.com/home')){
+        let texts = {
+            'https://vrchat.com/home': 'Browsing Online Friends',
+            'avatars': 'Browsing VRChat Avatars',
+            'locations': 'Browsing Online Friends',
+            'download': 'Browsing VRChat Downloads',
+            'worlds': 'Browsing VRChat Worlds',
+            'content/worlds': 'Browsing My Worlds',
+            'playermoderations': 'Browsing VRChat Blocks & Mutes'
+        }
+
+        let url = window.location.href.replace('https://vrchat.com/home/');
+        browser.runtime.sendMessage({ type: 'status', text: texts[url] || 'Browsing VRChat' });
+
+        setInterval(() => {
+            let url = window.location.href.replace('https://vrchat.com/home/', '');
+            console.log(url)
+            browser.runtime.sendMessage({ type: 'status', text: texts[url] || 'Browsing VRChat' });
+        }, 10000);
+    }
 }
