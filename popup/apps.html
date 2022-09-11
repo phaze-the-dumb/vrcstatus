@@ -8,7 +8,6 @@
                 background: linear-gradient(to bottom left, rgb(0, 0, 105), black);
                 border: white 5px solid;
                 margin: 0;
-                overflow: auto;
                 text-align: center;
                 color: white;
             }
@@ -85,16 +84,25 @@
                 cursor: pointer;
                 user-select: none;
             }
+
+            .scroll{
+                overflow: auto;
+                width: 350px;
+                height: 550px;
+                scrollbar-width: 5px;
+            }
         </style>
     </head>
     <body>
-        <h1>VRCStatus</h1>
+        <div class="scroll">
+            <h1>VRCStatus</h1>
 
-        <h3>Apps</h3>
-        <div id="apps">
-            
+            <h3>Apps</h3>
+            <div id="apps">
+                
+            </div>
+
+            <script src="./apps.js"></script>
         </div>
-
-        <script src="./apps.js"></script>
     </body>
 </html>
