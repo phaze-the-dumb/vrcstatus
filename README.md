@@ -1,3 +1,5 @@
+HOW TO USE: https://docs.phazed.xyz/vrcstatus/howto
+
 # vrcstatus
 A VRChat status app that uses the chatbox feature
 
