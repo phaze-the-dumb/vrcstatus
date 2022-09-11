@@ -1,7 +1,6 @@
 let avaiableApps = [
     { name: 'Youtube', img: '../logos/apps/youtube.png', desc: 'Show what you\'re currently watching on your status.', theme: 'red' },
     { name: 'Spotify', img: '../logos/apps/spotify.png', desc: 'Show what you\'re currently listening to on your status.', theme: 'green' },
-
 ]
 
 let load = () => {
